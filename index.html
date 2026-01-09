@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Script-Sense AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CONNECT CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>Script-Sense AI</h1>
+  <p>Learn in Malayalam, Code in any Language</p>
+  <div id="stats">
+    <div class="stat-circle">
+      <span class="stat-label">Score</span>
+      <span class="stat-value" id="score">0</span>
+    </div>
+    <div class="stat-circle">
+      <span class="stat-label">Streak</span>
+      <span class="stat-value" id="streak">0</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- LEFT PANEL -->
+  <div class="panel">
+    <h2>🧠  Input</h2>
+
+    <textarea id="logicInput"
+      placeholder="ഉദാഹരണം:
+ഒരു array-ൽ ഉള്ള ഏറ്റവും വലിയ നമ്പർ കണ്ടെത്തണം..."></textarea>
+
+    <select id="language">
+      <option value="python">Python</option
+      <option value="c">C</option>
+      <option value="java">Java</option>
+    </select>
+
+    <button id="generateBtn">Explain & Code</button>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel">
+
+    <div class="section">
+      <h2>📘 Malayalam Explanation</h2>
+      <pre id="explanation"></pre>
+    </div>
+
+    <div class="section">
+      <h2>💻 Generated Code</h2>
+      <pre id="code"></pre>
+    </div>
+
+    <div class="section">
+      <h2>🎤 Viva-Voce Questions</h2>
+      <pre id="viva"></pre>
+      <button id="revealBtn" class="reveal-btn">🔍 Reveal Answers</button>
+      <div id="answersContainer" class="answers-hidden">
+        <h3>💡 Answers</h3>
+        <pre id="answers"></pre>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  Built for Kerala Engineering Students 🇮🇳 | Script-Sense AI
+</footer>
+
+<!-- CONNECT JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
