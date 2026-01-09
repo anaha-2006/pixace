@@ -59,7 +59,7 @@ ANSWERS:
 `;
 
   // 🔴 REPLACE WITH YOUR GEMINI API KEY
-  const API_KEY = "AIzaSyDSzq7E_6zfBzpJXtuG022MsaebVsz5H5E";
+  const API_KEY = "api";
 
   const response = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,
@@ -117,3 +117,4 @@ function updateScoreAndStreak() {
   localStorage.setItem('lastUseDate', lastUseDate);
   updateDisplay();
 }
+
